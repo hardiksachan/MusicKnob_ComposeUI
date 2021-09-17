@@ -38,7 +38,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             MusicKnob_ComposeUITheme {
                 Box(
-                    modifier = Modifier.fillMaxSize(),
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(16.dp),
                     contentAlignment = Alignment.Center
                 ) {
                     Row(
